@@ -1,4 +1,4 @@
-package simplehttp
+package github.com/ddelellis-pkg/simplehttp
 
 import (
 	"errors"
