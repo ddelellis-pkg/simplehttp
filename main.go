@@ -47,7 +47,7 @@ func UnmarshalToStructFromURL(url string, parsed any) (err error) {
 	return
 }
 
-func GetURLAndUnmarshalToMap(url string) (dataMap map[string]any, err error) {
+func UnmarshalToMapFromURL(url string) (dataMap map[string]any, err error) {
 	var data []byte
 	if data, err = BytesFromURL(url); err != nil {
 		return
