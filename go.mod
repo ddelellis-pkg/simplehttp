@@ -1,3 +1,3 @@
-module github.com/ddelellis-pkg/simplehttp
+module simplehttp
 
 go 1.25.4
