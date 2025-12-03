@@ -37,7 +37,7 @@ func StringFromURL(url string) (s string, err error) {
 	return
 }
 
-func UnmarshalToStructFromURL(url string, parsed *any) (err error) {
+func UnmarshalToStructFromURL(url string, parsed any) (err error) {
 	var data []byte
 	if data, err = BytesFromURL(url); err != nil {
 		return
