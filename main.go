@@ -8,17 +8,6 @@ import (
 	"io"
 )
 
-func main() {
-	data, err := BytesFromURL("https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-122.007&date=tomorrow&formatted=0")
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	fmt.Println(string(data))
-
-}
-
 var BadStatusCode = errors.New("Bad status code in response")
 func BytesFromURL(url string) (body []byte, err error) {
 	var resp *http.Response
